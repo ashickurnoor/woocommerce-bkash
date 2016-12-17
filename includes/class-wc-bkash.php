@@ -3,6 +3,11 @@
 /**
  * bKash Class
  */
+ 
+
+if(!ini_get('allow_url_fopen') ) {
+ini_set('allow_url_fopen',1);
+} 
 class WC_bKash {
 
     const base_url = 'http://www.bkashcluster.com:9080/dreamwave/merchant/trxcheck/sendmsg';
